@@ -1,0 +1,577 @@
+﻿/*Freddy Miguel Hidalgo-Guerra*/
+/*@charset "UTF-8";*/
+
+body,
+html,
+h1 {
+  margin: 0;
+  padding: 0;
+
+}
+
+html{  
+  font-size:1vw;
+}
+
+body{
+ overflow-x: hidden;
+ background-image: linear-gradient(to top, black, lightgrey);
+}
+
+th{
+
+}
+
+.header {
+  position:relative;
+  z-index: 1;
+  /*padding: 11vw 16px;*/
+  background: #29a375;
+  height: 14.5%;
+  width: 100%;
+  color: #f1f1f1;
+  border-bottom-left-radius: 4vw;
+  border-bottom-right-radius: 4vw;
+}
+
+.logo{
+  display: block;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.postit{
+  position: absolute;
+  display: block;
+  top: 8.8%;
+  margin-left: 32%;
+  margin-right: auto;
+  width: 35%;
+}
+
+h1, p {
+  color: white;
+  font-size: 4vw;
+  text-align: center;
+  text-shadow: 0.15vw 0.15vw #000000;
+}
+
+p{
+  font-size: 2.5rem;
+}
+
+section {
+  height: 50vw;
+}
+.tag {
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: all 1.5s;
+}
+
+.tag2 {
+position:relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: all 1.5s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, -10vw);
+}
+
+.tag2.visible {
+  opacity: 1;
+  transform: translate(0, -10vw);
+}
+
+.start {
+
+}
+
+.next {
+ 
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15vw;
+  opacity: 0.95;
+  background-color: black;
+}
+
+.boite{
+    line-height: 1.6;
+    background: #11C9D4;
+    border-radius: 4vw; text-align:center;
+  /*  font-family:  Arial, sans-serif; font-size: 1vw;*/
+    margin-left: 20%; margin-right:20%;
+}
+
+.carre{
+  position: absolute;
+  z-index: -1;
+  top: 0vw;
+  background-image: linear-gradient(to top, #299CA3, #299CA3);
+  border-radius: 4vw;
+}
+
+.bar{
+  position: absolute;
+  z-index: 0;
+  height: 5vw;
+  width: 105vw;
+  background:#797979;
+}
+
+.parallelogram {
+  position: absolute;
+  z-index: -3;
+  margin-left: 0%;
+  top: 2.5vw;
+  left: -1vw;
+  width: 50vw;
+  height: 10vw;
+  transform: skew(40deg);
+  background-image: linear-gradient(to left, #299CA3 50%, transparent);
+}
+
+.dialogBox {
+  position: relative;
+  z-index: -1;
+  bottom: 5vw;
+  height: 10vw;
+  margin: 0;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  background: gray;
+  border-radius: 1vw;
+}
+
+.dialogBox.trois{
+  height: 13.25vw;
+}
+
+.dialogBox.quatre{
+  height: 16vw;
+}
+
+.left{
+  position: relative;
+  float:left;
+  width: 45%;
+  margin-left: 3%;
+  margin-right:2%;
+}
+
+.right{
+  position: relative;
+  text-align: right;
+  float:right;
+  width: 45%;  
+  margin-right: 3%;
+  margin-left: 2%;
+}
+
+.cercle{
+  opacity: 0;
+  position: fixed;
+  z-index: 2;
+  height: 6vw;
+  left:90%;
+  top : 80%;
+  width: 6vw;
+  border-radius: 360vw 360vw 360vw 360vw;
+  background-image: radial-gradient(farthest-corner,#d42929 10%, #dea4a4 90%);
+}
+
+#uiStartTopBar{
+  padding: 6.5vw 0px;
+  width: 100%;
+  top: -7.05vw;
+  background: #c1d311;
+  color: #f1f1f1;
+  border-bottom-left-radius: 4vw;
+  border-bottom-right-radius: 4vw;
+}
+
+#uiStartBotBar1{
+  padding: 2.5vw 0px;
+  width: 100%;
+  background: #c1d311;
+  color: #f1f1f1;
+  border-top-left-radius: 4vw;
+  border-top-right-radius: 4vw;
+}
+
+#uiStartBotBar2{
+  top: 48vw;
+  padding: 5.5vw 16px;
+  width: 100%;
+  background: #29a375;
+  color: #f1f1f1;
+  border-top-left-radius: 4vw;
+  border-top-right-radius: 4vw;
+}
+
+#uiUnderline1{
+  z-index:1;
+  top: 112.5vw;
+  left:25%;
+  height: 2.5vw;
+  width: 50vw;
+  border-radius: 4vw;
+  background-image: linear-gradient(to top #F9C9C9, #299CA3);
+  transform: skew(0deg, 5deg);
+}
+
+#uiUnderline2{
+  z-index:1;
+  top: 112.5vw;
+  left:25%;
+  height: 2.5vw;
+  width: 100vw;
+  border-radius: 4vw;
+  background-image: linear-gradient(to top #F9C9C9, #299CA3);
+  transform: skew(0deg, -5deg);
+}
+
+#uiTopBarB{
+  top: 60.45vw;
+  background-image: linear-gradient(to bottom,#29a375, transparent);
+}
+
+#uiTopBarC{
+  position:relative;
+  z-index: 0;
+  top: 22.5vw;
+  background: #299CA3;
+  background-image: linear-gradient(to bottom, #797979, #e0e0e0);
+}
+
+#uiTopBarD{
+  position: relative;
+  height: 5.1vw;
+  top:-5.1vw;
+  background-image: linear-gradient(to bottom, #e0e0e0, #85bab0);
+}
+
+#uiTopBarE{
+  position: relative;
+  background-image: linear-gradient(to bottom, #85bab0, #09a7a3);
+}
+
+
+#uiService{
+position: relative;
+z-index: 1;
+height: 5vw;
+left:20%;
+width: 55%;
+background-image: linear-gradient(to top, gray, gray);
+border-style: solid;
+border-width: 0.75vw;
+border-color: #11C9D4;
+}
+
+#uiBande{
+z-index: 1;
+height: 23vw;
+top: 17vw;
+width: 98.58%;
+background-image: linear-gradient(to top, gray, gray);
+border-style: solid;
+border-width: 0.75vw;
+}
+
+#uiBandeE{
+position: relative;
+z-index: 1;
+height: 23vw;
+top: 12vw;
+left:15%;
+width: 65%;
+background-image: linear-gradient(to top, gray, gray);
+border-style: solid;
+border-width: 0.75vw;
+}
+
+#uiMargeG1{
+  top: 2.5vw;
+  height: 110vw;
+  width: 15vw;
+  left: -5vw;
+  z-axis:1;
+}
+
+#uiMargeG2{
+  top: 0vw;
+  height: 110vw;
+  width: 15vw;
+  left: -7.5vw;
+  z-axis:1;
+  background: #11C9D4;
+}
+
+#uiMargeD1{
+  top: 2.5vw;
+  height: 110vw;
+  width: 15vw;
+  left: 90.5vw;
+  z-axis:1;
+}
+
+#uiMargeD2{
+  top: 0vw;
+  height: 110vw;
+  width: 15vw;
+  left: 93vw;
+  z-axis:1;
+  background: #11C9D4;
+}
+
+#uiTextSeparator{
+  position: absolute;
+  z-index: 1;
+  top: 10.75vw;
+  left: 38.5vw;
+  height: 1.5vw;
+  width: 21vw;
+  background: black;
+  border-radius: 2vw;
+  transform: rotate(90deg);
+}
+
+#uiSeparator{
+  content:"";
+  position: absolute;
+  z-index: 1;
+  top: 5vw;
+  bottom: 0;
+  margin-top:12.5vw;
+  height:97.8%;
+  left: 49.35%;
+  border-left: 1.5vw dashed #f0ec58; 
+}
+
+#uiCarreLeft{
+  left: -2vw;
+  height: 79vw;
+  width: 95%;
+}
+
+#uiCarreRight{
+  left: 4vw;
+  height: 95vw;
+  width: 95%;
+}
+
+#bulle{
+  position: absolute;
+  top:96vw;
+  left: 12.5vw;
+  /*width: 40%;*/
+  height: 20vw;
+ /* margin-left: 0%;
+  margin-right:2%;*/
+}
+
+#bulleText{
+position: relative;
+color: black;
+left: 5.5%;
+bottom: -7vw;
+text-shadow: none;
+font-size:1.85vw;
+}
+
+#uiPara {
+  position: absolute;
+  z-index: 1;
+  margin-left: 35%;
+  text-align: center;
+  top: 12vw;
+  left: -1vw;
+  width: 4.5vw;
+  height: 9vw;
+  color: black;
+  text-shadow: 0.15vw 0.15vw #FFFFFF;
+}
+
+#uiTrancheSect2G{
+  z-index: 1;
+  top: 67.95vw;
+  height: 45vw;
+  width: 15vw;
+  left: -2;
+  transform: skew(65deg);
+  margin-left: 5%;
+  background: #11C9D4;  
+}
+
+#uiFillG{
+  z-index: 1;
+  top: 67.95vw;
+  height: 45vw;
+  width: 26vw;
+  left: -2;
+  transform: skew(65deg);
+  margin-left: -20.7%;
+  background: #299CA3;  
+}
+
+#uiFillD{
+  z-index: 1;
+  top: 67.95vw;
+  height: 45vw;
+  width: 26vw;
+  left: -2;
+  transform: skew(-65deg);
+  margin-left: 96.7%;
+  background: #299CA3;  
+}
+
+#uiTrancheSect2D{
+  z-index: 1;
+  top: 67.95vw;
+  height: 45vw;
+  width: 15vw;
+  left: -2;
+  transform: skew(-65deg);
+  margin-left: 82%;
+  background: #11C9D4;  
+}
+
+
+#bracket{
+  position: absolute;
+  z-index: 0;
+  top: 25vw;
+  left:43.5vw;
+  height: 75%;
+  transform: rotate(-45deg);
+}
+
+#contact{
+  /*font-family: Helvetica;*/
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#one{
+  text-align:center;
+}
+
+#two{
+  position: relative;
+  text-align:left;
+  margin: 0;
+  margin-left: 12.5vw;
+  top: 25vw;
+}
+
+#three{
+  position: relative;
+  text-align:center;
+  /*border-style: dotted;*/
+  margin: 0;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  top: 12vw;
+}
+
+#four{
+  text-align:left;
+  margin-left:5vw;
+}
+
+#pag1{
+  position:absolute;
+  left: 12%;
+  cursor: pointer;
+}
+
+#pag2{
+  position: absolute;
+  left: 30%;
+  cursor: pointer;
+}
+
+#pag3{
+  position:absolute;
+  left: 48%;
+  cursor: pointer;
+}
+
+#pag4{
+  position: absolute;
+  left: 66%;
+  cursor: pointer;
+}
+#pag5{
+  position:absolute;
+  left: 84%;
+  cursor: pointer;
+}
+
+#z{
+  background: #d6cfa1;
+  height: 60vw;
+}
+
+#a{
+  line-height:1.3;
+ background-image: url("../images/quiSomme.jpg");
+background-size: 100vw 70vw;
+  background-repeat: no-repeat;
+/*background: #11d375;*/
+  height: 40vw;
+}
+
+#b{
+  position: relative;
+
+
+ background: #797979;
+  height: 80vw;
+}
+
+#c{
+  font-size:0;
+  background-image: url("../images/wallpaperhhh4.png");
+  background-size: 40vw 40vw;
+  /*background: #85BAB0;*/
+  height: 100vw;
+}
+
+#d{
+  background: #85BAB0;
+  height: 110vw; 
+}
+
+#retourAuTop{opacity: 0;
+  position: fixed;
+  z-index: 3;
+  height: 6vw;
+  left:90%;
+  top : 80%;
+  width: 6vw;
+  cursor: pointer;
+}
+
+#e{
+  position: relative;
+  z-index: 2;
+  background: #09a7a3;
+  height: 45vw;
+}
