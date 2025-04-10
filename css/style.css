@@ -194,6 +194,10 @@ position:relative;
   background-image: radial-gradient(farthest-corner,#d42929 10%, #dea4a4 90%);
 }
 
+#overflow{
+  overflow-x: hidden;
+}
+
 #uiStartTopBar{
   padding: 6.5vw 0px;
   width: 100%;
@@ -215,7 +219,7 @@ position:relative;
 
 #uiStartBotBar2{
   top: 48vw;
-  padding: 5.5vw 16px;
+  padding: 5.5vw 0px;
   width: 100%;
   background: #29a375;
   color: #f1f1f1;
@@ -246,14 +250,15 @@ position:relative;
 }
 
 #uiTopBarB{
+  width: 100%;
   top: 60.45vw;
   background-image: linear-gradient(to bottom,#29a375, transparent);
 }
 
 #uiTopBarC{
-  position:relative;
   z-index: 0;
-  top: 22.5vw;
+  width: 100%;
+  top: 79vw;
   background: #299CA3;
   background-image: linear-gradient(to bottom, #797979, #e0e0e0);
 }
@@ -261,12 +266,14 @@ position:relative;
 #uiTopBarD{
   position: relative;
   height: 5.1vw;
+  width: 100%;
   top:-5.1vw;
   background-image: linear-gradient(to bottom, #e0e0e0, #85bab0);
 }
 
 #uiTopBarE{
   position: relative;
+  width: 100%;
   background-image: linear-gradient(to bottom, #85bab0, #09a7a3);
 }
 
@@ -574,4 +581,47 @@ background-size: 100vw 70vw;
   z-index: 2;
   background: #09a7a3;
   height: 45vw;
+}
+
+@media screen and (max-width: 600px){
+
+  p{
+    font-size: 2.2rem;
+  }
+
+  #uiTopBarC{
+    top: 85vw;
+  }
+  
+  #uiCarreLeft{
+    height: 75vw;
+  }
+
+  #uiCarreRight{
+    height: 89vw;
+  }
+
+  #uiSeparator{
+    top: 8vw;
+  }
+
+  #bulleText{
+    bottom: -10vw;
+  }
+  
+  #a{
+    line-height: 1.5;
+  }
+  
+  #b{
+    height: 87vw;
+  }
+  
+  #c{
+    height: 96vw;
+  }
+
+  #d{
+    height: 109vw; 
+  }
 }
