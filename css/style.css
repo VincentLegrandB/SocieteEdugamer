@@ -365,7 +365,7 @@ border-width: 0.75vw;
   top: 5vw;
   bottom: 0;
   margin-top:12.5vw;
-  height:97.8%;
+  height: 97vw;
   left: 49.35%;
   border-left: 1.5vw dashed #f0ec58; 
 }
@@ -390,28 +390,6 @@ border-width: 0.75vw;
   height: 20vw;
  /* margin-left: 0%;
   margin-right:2%;*/
-}
-
-#bulleText{
-position: relative;
-color: black;
-left: 5.5%;
-bottom: -7vw;
-text-shadow: none;
-font-size:1.85vw;
-}
-
-#uiPara {
-  position: absolute;
-  z-index: 1;
-  margin-left: 35%;
-  text-align: center;
-  top: 12vw;
-  left: -1vw;
-  width: 4.5vw;
-  height: 9vw;
-  color: black;
-  text-shadow: 0.15vw 0.15vw #FFFFFF;
 }
 
 #uiTrancheSect2G{
