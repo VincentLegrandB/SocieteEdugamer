@@ -252,7 +252,7 @@ position:relative;
 #uiTopBarB{
   width: 100%;
   top: 60.45vw;
-  background-image: linear-gradient(to bottom,#29a375, transparent);
+  background-image: linear-gradient(to bottom,#29a375, #11d375);
 }
 
 #uiTopBarC{
@@ -510,16 +510,16 @@ border-width: 0.75vw;
 }
 
 #z{
-  background: #d6cfa1;
+  /*background: #d6cfa1;*/
+  background-image: url("../images/quiSomme.jpg");
+  background-size: 100vw 70vw;
+  background-repeat: no-repeat;
   height: 60vw;
 }
 
 #a{
   line-height:1.3;
- background-image: url("../images/quiSomme.jpg");
-background-size: 100vw 70vw;
-  background-repeat: no-repeat;
-/*background: #11d375;*/
+  background: #11d375;
   height: 40vw;
 }
 
