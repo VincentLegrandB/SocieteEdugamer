@@ -207,6 +207,21 @@ section {
   overflow-x: hidden;
 }
 
+#langEn{
+  position: absolute;
+  z-index: 5;
+  height: 2.5%;
+  top: 0.2%;
+}
+
+#langFr{
+  position: absolute;
+  z-index: 5;
+  height: 2.5%;
+  top: 0.2%;
+  left: 3%;
+}
+
 #slogan{
   position: absolute;
   top: 36.5vw;
