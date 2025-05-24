@@ -599,6 +599,17 @@ border-width: 0.75vw;
     font-size: 2.2rem;
   }
 
+  #langEn{
+    height: 1.5%;
+    top: 0.2%;
+  }
+
+  #langFr{
+    height: 1.5%;
+    top: 0.2%;
+    left: 5.5%;
+  }
+
   #slogan{
     top: 34vw;
     left: 0;
